@@ -1,6 +1,11 @@
 <?php
+
+// Zona horarias
 date_default_timezone_set("America/El_Salvador");
 
+
+
+// Fecha larga
 function fecha_espanol_larga(){
 
     $fecha_dia=date("d");
@@ -37,10 +42,11 @@ function fecha_espanol_larga(){
     return $fecha_final;
 }
 
-echo fecha_espanol_larga();
 
-echo "<br>";
 
+
+
+// Fecha corta
 function fecha_espanol_corta($fecha=""){
 
     if($fecha==""){
@@ -74,6 +80,3 @@ function fecha_espanol_corta($fecha=""){
 
     return $fecha_final;
 }
-
-$fecha_prueba="02-01-2021";
-echo fecha_espanol_corta($fecha_prueba);
